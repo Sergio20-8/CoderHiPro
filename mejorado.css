@@ -1,0 +1,281 @@
+:root {
+    --primary: #32d65b;
+    --secundary: #fcfaf9;
+    --tercero: #333333;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Poppins;
+    margin: auto;
+    background-color: var(--secundary);
+    font-size: 16px;
+}
+
+
+h1 {
+    color: var(--secundary);
+    font-size: 5rem; 
+    margin-top: 0; 
+}
+
+span {
+    color: var(--tercero);
+}
+
+
+.intro {
+    background-image: linear-gradient(to top, #32d65b 30%, #37b156 100% );
+    background-color: var(--primary); 
+    padding-bottom: 5rem;
+}
+
+.contenedor-media {
+    margin: auto 2rem;
+}
+
+header {
+    padding-top: 2.5rem;
+}
+ 
+.contenedor {
+    max-width: 950px;
+    margin: 0 auto;  
+}
+
+
+.nav-padre {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--tercero);
+    
+}
+
+a {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: var(--secundary);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--tercero);
+}
+ 
+
+.parrafo-inicial {
+    font-weight: 400;
+}
+
+.parrafo-inicial span {
+    font-weight: bold;
+}
+
+  
+.contactar {
+    
+    font-weight: 500; 
+    margin-top: 1.5rem;
+    display: inline-flex; 
+    align-items: center; 
+    background-color: #1ef053;  
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;  
+    font-size: 1.5rem;  
+    cursor: pointer;  
+    font-family: 'Poppins';
+}
+
+.flecha {
+    margin-left: 8px; 
+    width: 3rem;  
+    height: auto;   
+}
+
+.contactar:hover{
+    font-weight: 500;
+    background-color: var(--secundary); 
+}
+
+
+
+/* seccion de servicios */
+
+.servicios {
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.card-contenido {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+.servicio-articulo {
+    height: 30rem;
+    background-color: white;
+    max-width: 25rem; 
+    border-radius: 5px;
+    padding:1.4rem; 
+    padding-top: 0; 
+    padding-bottom: 3rem;
+    box-shadow: 5px 9px 9px rgba(15, 75, 15, 0.1); 
+    overflow: hidden;
+    margin: 12px;
+}
+
+.servicio-header .imagen{
+    width: 8rem;
+    height: auto;
+}
+
+.card-descripcion {
+    max-width: 3;
+    font-size: 1.3rem;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background-color: #333333;
+    text-align: center; 
+    padding-bottom: 20rem;
+}
+
+.contacto h2 { 
+    padding-top: 3rem;
+    color: var(--secundary);
+}
+
+.contacto-form{ 
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 300px;  
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-form fieldset { 
+    border-radius: 5px;
+    padding-top: 3rem;
+    border: none;
+    background-color:var(--tercero); 
+    color: var(--secundary);
+    padding-left: 4rem; 
+    padding-right: 4rem; 
+    padding-bottom: 3rem;
+    text-align: left;
+    box-shadow: 7px 20px 40px rgba(0, 0, 0, 0.342); 
+    
+}
+
+.contacto-form .campos{
+    width: 10rem; 
+    padding-bottom: 3rem; 
+
+}
+
+.campos input {
+    font-family: Poppins; 
+    min-width: 20rem;
+    max-width: 20rem;
+    border: none; 
+    background-color: var(--tercero);
+    border-bottom: 2px solid var(--primary); 
+    color: var(--secundary);
+}
+
+.campos input:focus {
+    outline: none; 
+    color: var(--secundary);   
+}
+
+.campos textarea { 
+    font-family: Poppins;
+    min-width: 20rem; 
+    max-width: 20rem;
+    min-height:13rem;
+    max-height:13rem;
+}
+
+.campos textarea:focus {
+    outline: none;   
+} 
+
+.enviar:hover{
+    background-color: #27ad48;
+}
+footer {
+    background-color: var(--tercero);
+    padding-bottom: 3rem;
+}
+
+.pie {
+    background-color: var(--tercero);
+}
+
+.pie p {
+    color:#fcfaf97e;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    
+   
+
+    .logo { 
+        margin-right: 15rem;
+    }
+
+    .intro {
+        padding-bottom: 5rem;
+    }
+    
+    .nav-padre {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h1 {
+        color: var(--secundary);
+        font-size: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    .card-contenido {
+        flex-direction: row;
+    }
+
+    .contacto-form{ 
+        max-width: 400px;
+    }
+
+    .campos input {
+        min-width: 30rem;
+    }
+
+    .campos textarea { 
+        min-width: 30rem;
+    }
+
+}
